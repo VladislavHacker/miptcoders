@@ -14,7 +14,7 @@
             <?php print $pool['name']; ?>
           </div>
           <br>
-          <form>
+          <form enctype="multipart/form-data" action="./?cmd=pools&act=send&id=<?php print $pool['id']; ?>" method="post">
          <?php
             $query = 'SELECT
                             `teachers`.`name` AS `teacher_name`,
@@ -34,11 +34,11 @@
                   <?php for ($j = 1; $j <= 10; $j++) { ?>
                     <label>
                        <?php print $j; ?>
-                       <input type="radio" name="comment[<?php print $i; ?>]">
+                       <input value="<?php print $j; ?>" type="radio" name="mark[<?php print $i; ?>]" required>
                     </label>
                   <?php } ?>
                 </div>
-                <input type="text" placeholder="Коментарий" name="comment[<?php print $i; ?>]">
+                <input type="text" placeholder="Коментарий" name="comment[<?php print $i; ?>]" required>
                 <br>
           <?php
                 $i++;
