@@ -16,9 +16,9 @@
                   WHERE `author`="'.$_SESSION[$CONFIG['host']]['id'].'"';
         $res = $mysqli->query($query);
         if ($res->num_rows != 0) {
-          while ($pool = $res->fetch_assoc()) { ?>
-            <a href="./?view=feedbacks&sect=view&id=<?php print $pool['id']; ?>">
-              <?php print $pool['name']; ?>
+          while ($feed = $res->fetch_assoc()) { ?>
+            <a href="./?view=feedbacks&sect=view&id=<?php print $feed['id']; ?>">
+              <?php print $feed['teacher_name'].' '.$feed['teacher_lname'].' '.$feed['teacher_patronymic']; ?>
             </a>
             <br>
    <?php  }

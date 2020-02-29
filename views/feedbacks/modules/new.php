@@ -4,12 +4,12 @@
   <body>
     <?php include_once('./template/header.php'); ?>
     <main>
-        <form action="./?cmd=feedbacks&act=new" method="post">
+        <form action="./?cmd=feedbacks&act=new&view=feedbacks" method="post">
             <div class="bottom">
-                <select id="department-select" class="Probl">
+                <select name="department" id="department-select" class="Probl">
                  <option> Выберите кафедру </option>
                 </select>
-                <select id="teachers-select" class="Probl">
+                <select name="teacher" id="teachers-select" class="Probl">
                  <option> Выберите препода </option>
                 </select>
             </div>
@@ -19,7 +19,7 @@
               </div>
           </div>
           <div class="A">
-              <textarea class="Ar" placeholder="Помогите нам, поднять образование в МФТИ!"></textarea>
+              <textarea name="feedback" class="Ar" placeholder="Помогите нам, поднять образование в МФТИ!"></textarea>
           </div>
           <div class="bottomdown">
                <input type="submit" class="Send" value="Отправить">
