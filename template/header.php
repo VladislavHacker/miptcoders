@@ -5,8 +5,8 @@
      <a href="./?view=feedbacks"> Отзывы </a>
      <a href="./?view=stats"> Статистика </a>
      <?php if ($_SESSION[$CONFIG['host']]['access'] == 255) { ?>
-       <a> Конструктор опросов </a>
-       <a> Персонал </a>
+       <a href="./?view=admin&act=pool_construct"> Конструктор опросов </a>
+       <a> Администрирование </a>
      <?php } ?>
      <a href="./?cmd=sign&act=out"> Выйти </a>
    </nav>

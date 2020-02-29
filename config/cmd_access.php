@@ -7,4 +7,8 @@
     $CMD_ACCESS['feedbacks'] = 'feedbacks';
   }
 
+  if (isset($_SESSION[$CONFIG['host']]['access']) && $_SESSION[$CONFIG['host']]['access'] == 255) {
+      $CMD_ACCESS['admin'] = 'admin';
+  }
+
  ?>

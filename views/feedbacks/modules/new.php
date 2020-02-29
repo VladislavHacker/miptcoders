@@ -4,29 +4,29 @@
   <body>
     <?php include_once('./template/header.php'); ?>
     <main>
-      <div>
         <form action="./?cmd=feedbacks&act=new" method="post">
-          <div>
-            <select>
-              <option>v</option>
-            </select>
-            <select>
-              <option>g              </option>
-            </select>
-          </div>
-          <div class="form-group">
-            <div class="form-description">
-              Напишите все что вы думаете, и если у вас есть идеи как можно улучшить ситуацию
+            <div class="bottom">
+                <select id="department-select" class="Probl">
+                 <option> Выберите кафедру </option>
+                </select>
+                <select id="teachers-select" class="Probl">
+                 <option> Выберите препода </option>
+                </select>
             </div>
-            <textarea>
-            </textarea>
+          <div class="Text">
+              <div class="text">
+                 Напишите свой отзыв о данном преподователе
+              </div>
           </div>
-          <div class="right-form-group">
-            <input type="submit" value="Отправить">
+          <div class="A">
+              <textarea class="Ar" placeholder="Помогите нам, поднять образование в МФТИ!"></textarea>
+          </div>
+          <div class="bottomdown">
+               <input type="submit" class="Send" value="Отправить">
           </div>
         </form>
-      </div>
     </main>
     <?php include_once('./template/footer.php'); ?>
+    <script src="./assets/js/teachersloader.js"></script>
   </body>
 </html>
