@@ -4,7 +4,18 @@
   <body>
     <?php include_once('./template/header.php'); ?>
     <main>
-      <a href="./?view=feedbacks&sect=new">Добавить отзыв</div>
+      <a href="./?view=feedbacks&sect=new">Добавить отзыв</a>
+      <div class="review">
+         <div class="review-block-Date">
+           Дата
+         </div>
+         <div class="review-block-Prep">
+           Преподователь
+         </div>
+         <div class="review-block-Status">
+           Статус
+         </div>
+      </div>
       <?php
         $query = 'SELECT
                     `teachers`.`name` AS `teacher_name`,
@@ -17,10 +28,17 @@
         $res = $mysqli->query($query);
         if ($res->num_rows != 0) {
           while ($feed = $res->fetch_assoc()) { ?>
-            <a href="./?view=feedbacks&sect=view&id=<?php print $feed['id']; ?>">
-              <?php print $feed['teacher_name'].' '.$feed['teacher_lname'].' '.$feed['teacher_patronymic']; ?>
+            <a href="./?view=feedbacks&sect=view&id=<?php print $feed['id']; ?>" class="review">
+               <div class="Date1">
+                 Дата1
+               </div>
+               <div class="Prep1">
+                 <?php print $feed['teacher_name'].' '.$feed['teacher_lname'].' '.$feed['teacher_patronymic']; ?>
+               </div>
+               <div class="Status">
+                 <span class="StatusOpen">Open</span>
+               </div>
             </a>
-            <br>
    <?php  }
         }
       ?>
