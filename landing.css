@@ -5,19 +5,24 @@
 
   #LoginButton{
     position: absolute;
-background-color:  #ffa200;
-border-radius: 4px;
-height: 40px;
-top: 250px;
-left: 2.5rem;
-font-size: 1rem;
-padding-left: 5px;
-padding-right: 5px;
-color:  #472d00;
-border: 0;
-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-transition-duration: 0.6s;
-border: 2px solid #ffa200;
+    background-color:  #ffa200;
+    border-radius: 4px;
+    height: 40px;
+    top: 250px;
+    left: 2.5rem;
+    font-size: 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:  #472d00;
+    border: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition-duration: 0.6s;
+    border: 2px solid #ffa200;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+      text-decoration: none;
   }
 
   #RegisteButton{
@@ -29,12 +34,17 @@ border: 2px solid #ffa200;
     left: 12.5rem;
     font-size: 1rem;
     padding-left: 5px;
-padding-right: 5px;
-color:  #472d00;
-border: 0;
-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-transition-duration: 0.6s;
-border: 2px solid #ffa200;
+    padding-right: 5px;
+    color:  #472d00;
+    border: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition-duration: 0.6s;
+    border: 2px solid #ffa200;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
   }
 
   #LoginButton:hover{
@@ -43,31 +53,32 @@ border: 2px solid #ffa200;
 
   }
 
-  
+
   #RegisteButton:hover{
     background-color: whitesmoke;
     border: 2px solid #ffa200;
   }
-#logo-icon{
-  position: absolute;
-  top: 6%;
-  left: 25rem;
-  font-size: 4rem;
-  color: #ffa200;
-  text-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
+
+  #logo-icon{
+    position: absolute;
+    top: 6%;
+    left: 25rem;
+    font-size: 4rem;
+    color: #ffa200;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
 
   .LogoMain{
-    display: flex; 
+    display: flex;
     flex-direction: row;
   }
-  
-  
+
+
   .UpperPicture{
     display:block;
   }
-  
-  
+
+
   .UpperPictureMobile{
     display: none;
   }
@@ -96,13 +107,13 @@ h3{
     position: relative;
  text-align: center;
  top: 50px;
- 
+
     top: -30%;
     font-size: 4rem;
     color:  #f8f8f8;
     }
-    
-    
+
+
 #DownIcon{
   position:absolute;
   color: white;
@@ -130,7 +141,7 @@ h3{
 
 .main-text{
             grid-column-start: 2;
-           
+
           }
 
 
@@ -143,8 +154,8 @@ h3{
           padding-bottom: 50px;
           font-size: 26px;
         }
-          
-          
+
+
           .main-text p{
             padding-top: 10px;
             text-indent: 20px;
@@ -154,16 +165,16 @@ h3{
       color: rgb(26, 26, 26);
             font-style: normal;
             font-variant: normal;
-            font-weight: 500; 
+            font-weight: 500;
           }
 
           .main-text h2{
-    
+
             text-align: left;
             padding-left: 30px;
           }
-          
-        
+
+
 
           h4{
             padding-top: 20px;
@@ -176,7 +187,7 @@ h3{
 
 /*для Мобилок версия*/
 
-@media only screen and (max-width : 600px) { 
+@media only screen and (max-width : 600px) {
 
 .UpperPicture{
   display: none;
@@ -232,6 +243,6 @@ h3{
  left: 12.5rem;
  top: 370px;
     }
- 
-    
+
+
 }

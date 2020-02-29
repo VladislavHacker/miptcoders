@@ -145,7 +145,7 @@ function sendPool() {
 
   xhr.onreadystatechange = function() {
      if (xhr.readyState == 4) {
-          alert("done");
+          location.href='./?view=pools';
      }
   }
   xhr.open('POST', './ajax/add_pool.php', true);
