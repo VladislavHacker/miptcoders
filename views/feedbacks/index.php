@@ -5,7 +5,7 @@
           include('modules/list.php');
         break;
       case 'new':
-          include('modules/view.php');
+          include('modules/new.php');
         break;
       default:
           include('modules/list.php');

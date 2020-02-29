@@ -5,11 +5,11 @@
     <?php include_once('./template/header.php'); ?>
     <main>
       <?php
-        $query = 'SELECT * FROM `pools`';
+        $query = 'SELECT * FROM `feedbacks` WHERE `author`="'.$_SESSION[$CONFIG['host']]['id'].'"';
         $res = $mysqli->query($query);
         if ($res->num_rows != 0) {
           while ($pool = $res->fetch_assoc()) { ?>
-            <a href="./?view=pools&sect=view&id=<?php print $pool['id']; ?>">
+            <a href="./?view=feedbacks&sect=view&id=<?php print $pool['id']; ?>">
               <?php print $pool['name']; ?>
             </a>
             <br>
