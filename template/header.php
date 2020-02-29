@@ -1,8 +1,8 @@
 <header>
   <div> Eduq</div>
   <nav>
-     <a> Опросы </a>
-     <a> Отзывы </a>
+     <a href="./?view=pools"> Опросы </a>
+     <a  href="./?view=feedbacks"> Отзывы </a>
      <a> Статистика </a>
      <?php if ($_SESSION[$CONFIG['host']]['access'] == 255) { ?>
        <a> Конструктор опросов </a>

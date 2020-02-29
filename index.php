@@ -24,7 +24,7 @@
      if (isset($VIEW_ACCESS[$_GET['view']])) {
         include_once('./views/'.$VIEW_ACCESS[$_GET['view']].'/index.php');
      } else {
-        
+        include_once("./views/404.php");
      }
    } else {
      if (isset($_SESSION[$CONFIG['host']]['access'])) {
