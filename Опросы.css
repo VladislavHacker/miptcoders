@@ -1,0 +1,37 @@
+.Header-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Open Sans';
+  font-size: 18px;
+}
+
+.borderName,.borderBegin,.borderEnd  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.borderName {
+  border-radius: 10px 0 0 10px;
+}
+
+.borderEnd {
+  border-radius: 0 10px 10px 0;
+}
+
+.listborderName,.listborderBegin,.listborderEnd  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  border-bottom: 1px solid black;
+  padding: 15px;
+}
