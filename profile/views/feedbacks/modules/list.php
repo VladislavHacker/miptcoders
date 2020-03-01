@@ -18,17 +18,18 @@
       </div>
       <?php
         $query = 'SELECT
+                    `feedbacks`.`id` AS `id`,
                     `teachers`.`name` AS `teacher_name`,
                     `teachers`.`last_name` AS `teacher_lname`,
                     `teachers`.`patronymic` AS `teacher_patronymic`,
                     `status`
                   FROM `feedbacks`
                   INNER JOIN `teachers` ON `feedbacks`.`teacher` = `teachers`.`id`
-                  WHERE `author`="'.$_SESSION[$CONFIG['host']]['id'].'"';
+                  WHERE `author`="'.$_SESSION[$CONFIG['host']]['id'].'" ORDER BY `id` DESC';
         $res = $mysqli->query($query);
         if ($res->num_rows != 0) {
           while ($feed = $res->fetch_assoc()) { ?>
-            <a href="./?view=feedbacks&sect=view&id=<?php print $feed['id']; ?>" class="review">
+            <a href="./?view=feedbacks&sect=dialog&id=<?php print $feed['id']; ?>" class="review">
                <div class="Date1">
                  Дата1
                </div>

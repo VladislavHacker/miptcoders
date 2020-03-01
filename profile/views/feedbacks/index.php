@@ -7,6 +7,9 @@
       case 'new':
           include('modules/new.php');
         break;
+      case 'dialog':
+          include('modules/dialog.php');
+        break;
       default:
           include('modules/list.php');
         break;

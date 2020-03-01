@@ -55,7 +55,7 @@
   font-family: 'Open Sans';
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #FFD700;
+  background-color: #ffa200;
   border: 1px solid white;
   border-radius: 4px;
   outline: none;
@@ -69,7 +69,7 @@
 
 .Probl:hover {
   background-color: white;
-  border: 1px solid #FFD700;
+  border: 1px solid #ffa200;
   border-radius: 4px;
   outline: none;
   padding-top: 5px;
@@ -78,7 +78,7 @@
 
 .Pr:hover {
   background-color: white;
-  border: 1px solid #FFD700;
+  border: 1px solid #ffa200;
   border-radius: 4px;
   outline: none;
   padding-top: 5px;
@@ -100,7 +100,7 @@
 }
 
 .Send {
-  background-color: #FFD700;
+  background-color: #ffa200;
   outline: none;
   border: 1px solid white;
   border-radius: 4px;
@@ -112,7 +112,7 @@
 
 .Send:hover {
     background: white;
-    border: 1px solid #FFD700;
+    border: 1px solid #ffa200;
     border-radius: 4px;
     width: 98px;
     height: 38px;

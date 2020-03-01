@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Статисика</title>
+      <link rel="icon" href="bar-icon.png">
+      <link rel="icon" href="http://example.com/favicon.png">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="GraphLine.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+          <link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class = "LineChart">
+        <canvas id="myChart2" width="200" height="200"></canvas>
+    </div>
+    </body>
+    <script src="Chart.js"></script>
+    <script>
+
+var ctx = document.getElementById('myChart');
+var myChart2 = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Опрос 1', 'Опрос 2', 'Опрос 3', 'Опрос 4'],
+        datasets: [{
+            label: 'Рейтинг преподавателя',
+            data: [3.1, 2.3, 4,4, 7.1],
+            backgroundColor: [
+                'rgba(0, 0, 255, 1)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(0, 0, 255, 1)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+        </script>
+</html>
