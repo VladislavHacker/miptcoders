@@ -1,0 +1,39 @@
+#F,#Vka,#Inst,#You {
+  color: orange;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+#F:hover,#You:hover,#Vka:hover ,#Inst:hover {
+  color: black;
+}
+
+.VK {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.tit {
+  font-family: "Open Sans";
+  font-weight: bold;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+footer {
+  box-shadow: 0 0 5px 1px black;
+}
+
+body {
+  width: 100%;
+  padding-left: 0;
+}
