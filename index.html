@@ -1,47 +1,78 @@
 <html>
     <head>
-        <link rel="icon" href="bar-icon.png">
+      <link rel="icon" href="bar-icon.png">
+      <link rel="icon" href="http://example.com/favicon.png">
         <meta charset="UTF-8">
+        <title>Eduq</title>
         <link rel="stylesheet" type="text/css" href="landing.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">   
         <meta content="width=device-width, initial-scale=1" name="viewport" />
           <link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+          
     </head>
 
     <body>
 
-        <img src="arktika-shadow.png" class="UpperPicture">
-        <img src="small-arktika.jpg"  class="UpperPictureMobile">
-
+        <img src="img/arktika-shadow.jpg" class="UpperPicture" id = "LargePicture">
+        <img src="img/small-arktika.jpg"  class="UpperPictureMobile">
+       
        <div class = "LogoMain">
         <h1>Eduq</h1>
         <i class="fas fa-comment-medical fa-2x" id = "logo-icon"></i>
       </div>
 <div class = "ButtonsGroup">
-  <a href="./profile/?view=sign" id = "LoginButton"> Авторизоваться</a>
-  <a href="./profile/?view=sign&sect=up" id = "RegisteButton">Зарегистрироваться</a>
+  <button id = "LoginButton"> Авторизоваться</button>
+  <button id = "RegisteButton">Зарегистрироваться</button>
 </div>
         <div class = "grid">
             <div class = "main-text">
 
-       <h4>Eduq - Технологии контроля качества образования</h4>
-  <p>С каждым годом цифровые технологии позволяют решать все больше ключевых задач образования, облегчение доступа к учебным материалам для студентов,
+       <h4 class="animated lightSpeedIn delay-1s" id = "LeftAppend">Eduq - Технологии контроля качества образования</h4>
+  <p class="animated lightSpeedIn delay-1s">С каждым годом цифровые технологии позволяют решать все больше ключевых задач образования, облегчение доступа к учебным материалам для студентов, 
       оптимизация процесса обучения, ведение статистики достижений студентов.  </p>
-    <p>Eduq используется как инструмент для улучшения качетсва образованием путем обеспечения связи между студентами и руководством учебного заведения. </p>
-      <h4>Eduq и её потенциал</h4>
-      <p>Программа может решать спекр задач, связанных с оптимизацие учеьного процесса, с еёпомощью студенты могут
+    <p class="animated lightSpeedIn delay-1s">Eduq используется как инструмент для улучшения качетсва образованием путем обеспечения связи между студентами и руководством учебного заведения. </p>
+      <h4 class="animated lightSpeedIn delay-1s" id = "Append">Eduq и её потенциал</h4>
+      <p class="animated lightSpeedIn delay-1s" id = "TopMargin">Программа может решать спекр задач, связанных с оптимизацие учеьного процесса, с еёпомощью студенты могут 
           отправлять свои предложения и пожелания на рассотрение руководству учебного заведения. Пользователям предоставляется возможность
         анонимно дать оценку каждому преподавателю. Учащиеся могут вести диалог с администрацией пока не придут к решению проблемы.
       </p>
         <p></p>
-          <h4>Для кого наша программа</h44>
-          <p id = "ModifyList">Студенты<br>Администрация<br>Главный админ<br></p>
-          <h4>Функционал программы</h4>
-            <p id = "ModModifyList">Авторизация пользователей<br>Отправка предложений и жалоб<br>Статистика преподавателей<br></p>
-            </div>
+          <h4 id = "Audience" class="animated zoomIn delay-2s">Для кого наша программа</h4>
+          <p id = "ModifyList" class="animated zoomIn delay-2s"> Студенты<br>Администрация<br>Главный админ<br></p>
+       
+          <h4 class="animated zoomIn delay-2s" id = "Consumers">Функционал программы</h4>
+  
+            <p id = "ModModifyList" class="animated zoomIn delay-2s">Авторизация пользователей<br>Отправка предложений и жалоб<br>Статистика преподавателей<br></p>
+ 
+          </div>
     </div>
     <i class="fas fa-chevron-down" id = "DownIcon"></i>
+    <i class="fas fa-cogs" id = "GearIcon"></i>
+    <i class="fas fa-users" id = "UserIcon"></i>
+    <i class="far fa-check-square" id = "AllDone"></i>
 
     </body>
+    <script>
+ var image = document.getElementById("LargePicture");
+            var currentPos = 0;
+            var images = ["img/Pic1.jpg", "img/Pic2.jpg", "img/Pic3.jpg","img/Pic4.jpg"]
 
+            function volgendefoto() {
+                if (++currentPos >= images.length)
+                    currentPos = 0;
+
+                image.src = images[currentPos];
+            }
+
+            setInterval(volgendefoto, 10000);
+
+
+
+           
+              
+
+    </script>
+
+  
 </html>

@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: url('../img/DSC_0744.JPG');
+  background: url('../img/Pic1.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -36,6 +36,8 @@ body {
   font-size: 24px;
   margin-bottom: 24px;
   font-family: 'Open Sans';
+  color: #ffa200;
+  text-shadow: 0 0 1px grey;
 }
 
 .sign-form form {
@@ -49,4 +51,17 @@ body {
 .sign-form a {
   color: black;
   text-decoration: none;
+  font-family: 'Open Sans';
+}
+
+@media screen and (min-width:860px) and (max-width: 1200px) {
+  .sign-form {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width:0) and (max-width: 860px) {
+  .sign-form {
+    width: calc(100vw - 64px);
+  }
 }

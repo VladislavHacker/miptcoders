@@ -4,6 +4,9 @@
   <body>
     <?php include_once('./template/header.php'); ?>
     <main>
+      <?php if ($_SESSION[$CONFIG['host']]['access'] == 255) { ?>
+            <a class="addfeedbtn" href="./?view=admin">Добавить опрос</a>
+      <?php } ?>
       <section class="pools-section">
         <div class="Header-block">
           <div class="borderName">

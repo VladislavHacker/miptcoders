@@ -141,6 +141,11 @@ function CreateNew(){
 }
 
 function sendPool() {
+
+  if (CreatedPool.length == 0) {
+    return;
+  }
+
   let xhr = new XMLHttpRequest();
 
   xhr.onreadystatechange = function() {

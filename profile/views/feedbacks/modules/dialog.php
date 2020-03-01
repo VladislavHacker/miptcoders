@@ -10,14 +10,11 @@
             $res = $mysqli->query($query);
             if ($res->num_rows != 0) {
               while ($msg = $res->fetch_assoc()) { ?>
-                <div>
-                  <div>
-                    <?php print $msg['datetime']; ?>
-                  </div>
-                  <div>
-                    <?php print $msg['text']; ?>
-                  </div>
-                </div>
+                <div class = "ConversationContent">
+                    <p id = "Sender">Вы</p>
+                    <p id = "MessageTime"><?php print $msg['datetime']; ?></p>
+                    <textarea id="TextArea"  cols="60" readonly><?php print $msg['text']; ?></textarea>
+	              </div>
         <?php }
             }
           }

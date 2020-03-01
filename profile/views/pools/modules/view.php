@@ -29,7 +29,9 @@
             if ($res->num_rows != 0) {
               while ($question = $res->fetch_assoc()) { ?>
                 <div class="pool-teacher">
-                  <?php print $question['teacher_name'].' '.$question['teacher_lname'].' '.$question['teacher_patronymic']; ?>
+                  <span><?php print $question['teacher_name'].' '.$question['teacher_lname'].' '.$question['teacher_patronymic']; ?></span>
+                  <br>
+                  Выберите оценку качеству преподавания (чем меньше - тем хуже)
                 </div>
                 <div class="markline">
                   <?php for ($j = 1; $j <= 10; $j++) { ?>

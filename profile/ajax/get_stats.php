@@ -10,7 +10,7 @@
   require_once('../db/db.php');
   header('Content-Type: application/json');
   $result = array();
-  for ($i = 1; $i <= 10; $i++) {
+  for ($i = 0; $i < 10; $i++) {
     $query = 'SELECT COUNT(*) AS `count`
               FROM `pool_questions`
               RIGHT OUTER JOIN `pool_answers` ON `pool_questions`.`id` = `pool_answers`.`question`

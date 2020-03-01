@@ -31,7 +31,7 @@
           while ($feed = $res->fetch_assoc()) { ?>
             <a href="./?view=feedbacks&sect=dialog&feed=<?php print $feed['id']; ?>" class="review">
                <div class="Date1">
-                 Дата1
+                 <?php print date('Y-m-d'); ?>
                </div>
                <div class="Prep1">
                  <?php print $feed['teacher_name'].' '.$feed['teacher_lname'].' '.$feed['teacher_patronymic']; ?>

@@ -1,28 +1,78 @@
 
+ #GearIcon{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffa200;
+  font-size: 50px;
+ top: -210px;
+ left: -280px;
+}
+#TopMargin{
+  margin-top: 20px;
+}
+#Append{
+  position: relative;
+  left: 90px;
+}
+#AllDone{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffa200;
+  font-size: 60px;
+ top: -740px;
+ left: -280px;
+}
+#UserIcon{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffa200;
+  font-size: 50px;
+ top: -440px;
+ left: -280px;
+}
+#Consumers{
+  position: relative;
+  left: 90px;
+}
+
+#Audience{
+  position: relative;
+  left: 90px;
+}
+
+
+
   h1{
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
 
+#UsersIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
   #LoginButton{
     position: absolute;
-    background-color:  #ffa200;
-    border-radius: 4px;
-    height: 40px;
-    top: 250px;
-    left: 2.5rem;
-    font-size: 1rem;
-    padding-left: 5px;
-    padding-right: 5px;
-    color:  #472d00;
-    border: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition-duration: 0.6s;
-    border: 2px solid #ffa200;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-      text-decoration: none;
+background-color:  #ffa200;
+border-radius: 4px;
+height: 40px;
+top: 250px;
+left: 2.5rem;
+font-size: 1rem;
+padding-left: 5px;
+padding-right: 5px;
+color:  #472d00;
+border: 0;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+transition-duration: 0.6s;
+border: 2px solid #ffa200;
   }
 
   #RegisteButton{
@@ -34,17 +84,12 @@
     left: 12.5rem;
     font-size: 1rem;
     padding-left: 5px;
-    padding-right: 5px;
-    color:  #472d00;
-    border: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition-duration: 0.6s;
-    border: 2px solid #ffa200;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+padding-right: 5px;
+color:  #472d00;
+border: 0;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+transition-duration: 0.6s;
+border: 2px solid #ffa200;
   }
 
   #LoginButton:hover{
@@ -53,32 +98,31 @@
 
   }
 
-
+  
   #RegisteButton:hover{
     background-color: whitesmoke;
     border: 2px solid #ffa200;
   }
-
-  #logo-icon{
-    position: absolute;
-    top: 6%;
-    left: 25rem;
-    font-size: 4rem;
-    color: #ffa200;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
-  }
+#logo-icon{
+  position: absolute;
+  top: 6%;
+  left: 25.5rem;
+  font-size: 4rem;
+  color: #ffa200;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
 
   .LogoMain{
-    display: flex;
+    display: flex; 
     flex-direction: row;
   }
-
-
+  
+  
   .UpperPicture{
     display:block;
   }
-
-
+  
+  
   .UpperPictureMobile{
     display: none;
   }
@@ -107,13 +151,13 @@ h3{
     position: relative;
  text-align: center;
  top: 50px;
-
+ 
     top: -30%;
     font-size: 4rem;
     color:  #f8f8f8;
     }
-
-
+    
+    
 #DownIcon{
   position:absolute;
   color: white;
@@ -141,7 +185,7 @@ h3{
 
 .main-text{
             grid-column-start: 2;
-
+           
           }
 
 
@@ -154,8 +198,8 @@ h3{
           padding-bottom: 50px;
           font-size: 26px;
         }
-
-
+          
+          
           .main-text p{
             padding-top: 10px;
             text-indent: 20px;
@@ -165,16 +209,16 @@ h3{
       color: rgb(26, 26, 26);
             font-style: normal;
             font-variant: normal;
-            font-weight: 500;
+            font-weight: 500; 
           }
 
           .main-text h2{
-
+    
             text-align: left;
             padding-left: 30px;
           }
-
-
+          
+        
 
           h4{
             padding-top: 20px;
@@ -187,7 +231,7 @@ h3{
 
 /*для Мобилок версия*/
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 600px) { 
 
 .UpperPicture{
   display: none;
@@ -198,7 +242,7 @@ h3{
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 h3{
@@ -237,12 +281,58 @@ h3{
     }
     #RegisteButton{
       left: 1rem;
-      top: 370px;
+      top: 390px;
     }
     #LoginButton{
  left: 12.5rem;
- top: 370px;
+ top: 390px;
+    }
+ 
+    #GearIcon{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffa200;
+      font-size: 60px;
+     top: -345px;
+     left: -110px;
+    }
+    #UserIcon{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffa200;
+      font-size: 60px;
+     top: -620px;
+     left: -110px;
+    }
+    #Consumers{
+      position: relative;
+      left: 90px;
+    }
+
+    #Audience{
+      position: relative;
+      left: 90px;
+    }
+ 
+    #Append{
+      position: relative;
+      left: 90px;
+    }
+    #AllDone{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffa200;
+      font-size: 60px;
+     top: -1120px;
+     left: -110px;
     }
 
 
+    
 }
