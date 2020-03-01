@@ -1,40 +1,46 @@
+html,body
+{
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.Together{
+  display: block;
+}
+.TitleTogether{
+  display: inline-block;
+}
 
  #GearIcon{
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffa200;
-  font-size: 50px;
- top: -210px;
- left: -280px;
+  top: 75px;
+    color: #ffa200;
+    font-size: 60px;
+
 }
 #TopMargin{
-  margin-top: 20px;
+  margin-top: 30px;
 }
 #Append{
   position: relative;
   left: 90px;
 }
 #AllDone{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+position: relative;
+top: 75px;
   color: #ffa200;
   font-size: 60px;
- top: -740px;
- left: -280px;
+  left: 10px;
+
 }
 #UserIcon{
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffa200;
-  font-size: 50px;
- top: -440px;
- left: -280px;
+  top: 75px;
+    color: #ffa200;
+    font-size: 60px;
+
 }
 #Consumers{
   position: relative;
@@ -120,6 +126,7 @@ border: 2px solid #ffa200;
   
   .UpperPicture{
     display:block;
+
   }
   
   
@@ -233,16 +240,24 @@ h3{
 
 @media only screen and (max-width : 600px) { 
 
+
+ 
+
+
+
 .UpperPicture{
   display: none;
 }
-
+h4{
+  font-size: 20px;
+}
 
 .UpperPictureMobile{
   display: block;
   width: 100%;
-  height: auto;
+
   margin-bottom: 80px;
+
 }
 
 h3{
@@ -288,51 +303,48 @@ h3{
  top: 390px;
     }
  
-    #GearIcon{
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffa200;
-      font-size: 60px;
-     top: -345px;
-     left: -110px;
-    }
-    #UserIcon{
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffa200;
-      font-size: 60px;
-     top: -620px;
-     left: -110px;
-    }
+
     #Consumers{
       position: relative;
-      left: 90px;
+      left: 40px;
     }
 
     #Audience{
       position: relative;
-      left: 90px;
+      left: 40px;
     }
  
     #Append{
       position: relative;
-      left: 90px;
+      left: 40px;
     }
+  
+
     #AllDone{
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffa200;
-      font-size: 60px;
-     top: -1120px;
-     left: -110px;
-    }
+      top: 20px;
+        color: #ffa200;
+        font-size: 40px;
+        left: 10px;
 
+      
+      }
+      #UserIcon{
+        position: relative;
+        top: 20px;
+          color: #ffa200;
+          font-size: 40px;
+      
+      }
+      
+       #GearIcon{
+        position: relative;
+        top: 20px;
+          color: #ffa200;
+          font-size: 40px;
+      
+      }
+      
 
     
 }

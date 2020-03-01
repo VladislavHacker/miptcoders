@@ -1,56 +1,69 @@
 <html>
     <head>
-      <link rel="icon" href="bar-icon.png">
+      <link rel="icon" href="img/bar-icon.png">
       <link rel="icon" href="http://example.com/favicon.png">
         <meta charset="UTF-8">
         <title>Eduq</title>
         <link rel="stylesheet" type="text/css" href="landing.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
           <link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-          
+
     </head>
 
     <body>
 
         <img src="img/arktika-shadow.jpg" class="UpperPicture" id = "LargePicture">
         <img src="img/small-arktika.jpg"  class="UpperPictureMobile">
-       
+
        <div class = "LogoMain">
         <h1>Eduq</h1>
         <i class="fas fa-comment-medical fa-2x" id = "logo-icon"></i>
       </div>
 <div class = "ButtonsGroup">
-  <button id = "LoginButton"> Авторизоваться</button>
-  <button id = "RegisteButton">Зарегистрироваться</button>
+  <a href="./?view=sign&sect=in" id = "LoginButton"> Авторизоваться</a>
+  <a href="./?view=sign&sect=up" id = "RegisteButton">Зарегистрироваться</a>
 </div>
         <div class = "grid">
             <div class = "main-text">
-
+<div class = "Together">
        <h4 class="animated lightSpeedIn delay-1s" id = "LeftAppend">Eduq - Технологии контроля качества образования</h4>
-  <p class="animated lightSpeedIn delay-1s">С каждым годом цифровые технологии позволяют решать все больше ключевых задач образования, облегчение доступа к учебным материалам для студентов, 
+  <p class="animated lightSpeedIn delay-1s">С каждым годом цифровые технологии позволяют решать все больше ключевых задач образования, облегчение доступа к учебным материалам для студентов,
       оптимизация процесса обучения, ведение статистики достижений студентов.  </p>
+      <div class = "Together">
+        <div class = "TitleTogether">
     <p class="animated lightSpeedIn delay-1s">Eduq используется как инструмент для улучшения качетсва образованием путем обеспечения связи между студентами и руководством учебного заведения. </p>
-      <h4 class="animated lightSpeedIn delay-1s" id = "Append">Eduq и её потенциал</h4>
-      <p class="animated lightSpeedIn delay-1s" id = "TopMargin">Программа может решать спекр задач, связанных с оптимизацие учеьного процесса, с еёпомощью студенты могут 
+    <i class="far fa-check-square" id = "AllDone"></i> <h4 class="animated lightSpeedIn delay-1s" id = "Append">Потенциал Eduq</h4>
+  </div>
+  <div class = "TextTogether">
+    <p class="animated lightSpeedIn delay-1s" id = "TopMargin">Программа может решать спекр задач, связанных с оптимизацие учеьного процесса, с еёпомощью студенты могут
           отправлять свои предложения и пожелания на рассотрение руководству учебного заведения. Пользователям предоставляется возможность
         анонимно дать оценку каждому преподавателю. Учащиеся могут вести диалог с администрацией пока не придут к решению проблемы.
       </p>
+    </div>
+    </div>
         <p></p>
-          <h4 id = "Audience" class="animated zoomIn delay-2s">Для кого наша программа</h4>
-          <p id = "ModifyList" class="animated zoomIn delay-2s"> Студенты<br>Администрация<br>Главный админ<br></p>
-       
-          <h4 class="animated zoomIn delay-2s" id = "Consumers">Функционал программы</h4>
-  
+        <div class = "Together">
+          <div class = "TitleTogether">
+        <i class="fas fa-users" id = "UserIcon"></i>  <h4 id = "Audience" class="animated zoomIn delay-2s">Для кого наша программа</h4>
+      </div>
+      <div class = "TextTogether">
+        <p id = "ModifyList" class="animated zoomIn delay-2s"> Студенты<br>Администрация<br>Главный админ<br></p>
+      </div>
+      </div>
+      <div class = "Together">
+        <div class = "TitleTogether">
+          <i class="fas fa-cogs" id = "GearIcon"></i> <h4 class="animated zoomIn delay-2s" id = "Consumers">Функционал программы</h4>
+  </div>
+  <div class = "TextTogether">
             <p id = "ModModifyList" class="animated zoomIn delay-2s">Авторизация пользователей<br>Отправка предложений и жалоб<br>Статистика преподавателей<br></p>
- 
+          </div>
+          </div>
           </div>
     </div>
     <i class="fas fa-chevron-down" id = "DownIcon"></i>
-    <i class="fas fa-cogs" id = "GearIcon"></i>
-    <i class="fas fa-users" id = "UserIcon"></i>
-    <i class="far fa-check-square" id = "AllDone"></i>
+
 
     </body>
     <script>
@@ -66,13 +79,7 @@
             }
 
             setInterval(volgendefoto, 10000);
-
-
-
-           
-              
-
     </script>
 
-  
+
 </html>
