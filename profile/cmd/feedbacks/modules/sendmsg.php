@@ -1,8 +1,6 @@
 <?php
-  if (isset($_POST['department']) && isset($_POST['teacher']) && $_POST['feedback']) {
-    $department = (int)$_POST['department'];
-    $teacher = (int)$_POST['teacher'];
-    $feedback = htmlspecialchars($_POST['feedback']);
+  if (isset($_GET['feed']) && isset($_POST['msg'])) {
+    $msg = htmlspecialchars($_POST['msg']);
     $query = "INSERT INTO `feedbacks` (`id`, `author`, `answerer`, `teacher`, `status`)
               VALUES (NULL, '{$_SESSION[$CONFIG['host']]['id']}', '0', '{$teacher}', '0')";
     $mysqli->query($query);

@@ -4,7 +4,7 @@
   <body>
     <?php include_once('./template/header.php'); ?>
     <main>
-      <a href="./?view=feedbacks&sect=new">Добавить отзыв</a>
+      <a class="addfeedbtn" href="./?view=feedbacks&sect=new">Добавить отзыв</a>
       <div class="review">
          <div class="review-block-Date">
            Дата
@@ -29,7 +29,7 @@
         $res = $mysqli->query($query);
         if ($res->num_rows != 0) {
           while ($feed = $res->fetch_assoc()) { ?>
-            <a href="./?view=feedbacks&sect=dialog&id=<?php print $feed['id']; ?>" class="review">
+            <a href="./?view=feedbacks&sect=dialog&feed=<?php print $feed['id']; ?>" class="review">
                <div class="Date1">
                  Дата1
                </div>

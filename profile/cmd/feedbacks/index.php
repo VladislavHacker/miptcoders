@@ -4,6 +4,9 @@
       case 'new':
           include('modules/new.php');
         break;
+      case 'sendmsg':
+          include('modules/sendmsg.php');
+        break;
     }
   }
  ?>

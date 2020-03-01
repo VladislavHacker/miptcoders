@@ -204,3 +204,26 @@
   width: 45%;
   height: 27vw;
 }
+
+.addfeedbtn{
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #ffa200;
+  color: black;
+  padding: 0 8px;
+  color: white;
+  font-weight: bold;
+  font-family: "Open Sans";
+  text-decoration: none;
+  border-radius: 4px;
+  border: solid 1px #ffa200;
+  margin-bottom: 24px;
+  transition: ease all 0.6s;
+}
+.addfeedbtn:hover{
+  background: white;
+  color:  #ffa200;
+}
