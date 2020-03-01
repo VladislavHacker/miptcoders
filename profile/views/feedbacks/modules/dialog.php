@@ -9,16 +9,22 @@
             $query = 'SELECT * FROM `messages` WHERE `feedback`="'.(int)$_GET['feed'].'" ORDER BY `id` DESC';
             $res = $mysqli->query($query);
             if ($res->num_rows != 0) {
-              while ($msg = $res->fetch_assoc()) {
-                print $msg['text'];
-              }
+              while ($msg = $res->fetch_assoc()) { ?>
+                <div>
+                  <div>
+                    <?php print $msg['datetime']; ?>
+                  </div>
+                  <div>
+                    <?php print $msg['text']; ?>
+                  </div>
+                </div>
+        <?php }
             }
           }
         ?>
         <div class="send-form">
-          <form action="./?view=feedbacks&sect=dialog&feed=<?php print $_GET['feed']; ?>&cmd=feedbacks&act=sendmsg">
-            <textarea>
-            </textarea>
+          <form method="post" action="./?view=feedbacks&sect=dialog&feed=<?php print $_GET['feed']; ?>&cmd=feedbacks&act=sendmsg">
+            <textarea name="msg"></textarea>
             <input type="submit">
           </form>
         </div>
