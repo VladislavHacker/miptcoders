@@ -184,3 +184,23 @@
   color: #fff;
   text-decoration: none;
 }
+
+.selecter{
+  margin-bottom: 32px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+}
+.chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 45%;
+  height: 27vw;
+}

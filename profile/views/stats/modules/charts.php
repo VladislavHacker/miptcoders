@@ -12,15 +12,17 @@
           <option> Выберите препода </option>
         </select>
       </div>
-      <div>
+      <div class="chart-container">
         <div class="chart">
-          <canvas id="myChart" width="400" height="400"></canvas>
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="chart">
+          <canvas id="myChart2"></canvas>
         </div>
       </div>
     </main>
     <?php include_once('./template/footer.php'); ?>
     <script src="./assets/js/Chart.js"></script>
     <script src="./assets/js/mycharts.js"></script>
-    <script src="./assets/js/teachersloader3.js"></script>
   </body>
 </html>

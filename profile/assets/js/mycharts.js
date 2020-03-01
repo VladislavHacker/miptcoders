@@ -70,7 +70,8 @@ data: {
     }]
 },
 options: {
-
+  responsive: true,
+    maintainAspectRatio: false
 }
 });
 
@@ -81,6 +82,12 @@ document.getElementById('teachers-select').onchange = function() {
 function changeData(data) {
   myChart.data.datasets[0].data = data;
   myChart.update();
+}
+
+function changeData2(data) {
+  myChart2.data.labels = data.names;
+  myChart2.data.datasets[0].data = data.avgs;
+  myChart2.update();
 }
 
 var old_val = document.getElementById('department-select').value;
@@ -96,6 +103,18 @@ function updateData() {
   }
   xhr.open('POST', './ajax/get_stats.php?teacher=' + document.getElementById('teachers-select').value, true);
   xhr.send();
+
+
+  let xhr2 = new XMLHttpRequest();
+
+  xhr2.onreadystatechange = function() {
+     if (xhr2.readyState == 4) {
+        let data = JSON.parse(xhr2.responseText);
+        changeData2(data);
+     }
+  }
+  xhr2.open('POST', './ajax/get_stats2.php?teacher=' + document.getElementById('teachers-select').value, true);
+  xhr2.send();
 }
 
 document.getElementById('department-select').onchange = function() {
@@ -104,3 +123,40 @@ document.getElementById('department-select').onchange = function() {
     updateData();
   });
 }
+
+
+
+var ctx = document.getElementById('myChart2');
+var myChart2 = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Опрос 1', 'Опрос 2', 'Опрос 3', 'Опрос 4'],
+        datasets: [{
+            label: 'Рейтинг преподавателя',
+            data: [],
+            backgroundColor: [
+                'rgba(0, 0, 255, 1)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(0, 0, 255, 1)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
