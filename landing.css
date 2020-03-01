@@ -1,0 +1,338 @@
+
+ #GearIcon{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffa200;
+  font-size: 50px;
+ top: -210px;
+ left: -280px;
+}
+#TopMargin{
+  margin-top: 20px;
+}
+#Append{
+  position: relative;
+  left: 90px;
+}
+#AllDone{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffa200;
+  font-size: 60px;
+ top: -740px;
+ left: -280px;
+}
+#UserIcon{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffa200;
+  font-size: 50px;
+ top: -440px;
+ left: -280px;
+}
+#Consumers{
+  position: relative;
+  left: 90px;
+}
+
+#Audience{
+  position: relative;
+  left: 90px;
+}
+
+
+
+  h1{
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+#UsersIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  #LoginButton{
+    position: absolute;
+background-color:  #ffa200;
+border-radius: 4px;
+height: 40px;
+top: 250px;
+left: 2.5rem;
+font-size: 1rem;
+padding-left: 5px;
+padding-right: 5px;
+color:  #472d00;
+border: 0;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+transition-duration: 0.6s;
+border: 2px solid #ffa200;
+  }
+
+  #RegisteButton{
+    position: absolute;
+    background-color:  #ffa200;
+    border-radius: 4px;
+    height: 40px;
+    top: 250px;
+    left: 12.5rem;
+    font-size: 1rem;
+    padding-left: 5px;
+padding-right: 5px;
+color:  #472d00;
+border: 0;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+transition-duration: 0.6s;
+border: 2px solid #ffa200;
+  }
+
+  #LoginButton:hover{
+    background-color: whitesmoke;
+    border: 2px solid #ffa200;
+
+  }
+
+  
+  #RegisteButton:hover{
+    background-color: whitesmoke;
+    border: 2px solid #ffa200;
+  }
+#logo-icon{
+  position: absolute;
+  top: 6%;
+  left: 25.5rem;
+  font-size: 4rem;
+  color: #ffa200;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+  .LogoMain{
+    display: flex; 
+    flex-direction: row;
+  }
+  
+  
+  .UpperPicture{
+    display:block;
+  }
+  
+  
+  .UpperPictureMobile{
+    display: none;
+  }
+* {
+    margin: 0;
+    padding: 0;
+        font-family: 'Open Sans' ;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+h1{
+
+position: absolute;
+top: 20px;
+left: 20px;
+font-size: 10rem;
+color:  #ffa200;
+}
+
+
+h3{
+    position: relative;
+ text-align: center;
+ top: 50px;
+ 
+    top: -30%;
+    font-size: 4rem;
+    color:  #f8f8f8;
+    }
+    
+    
+#DownIcon{
+  position:absolute;
+  color: white;
+  font-size: 70px;
+  top: 88%;
+  left: 48%;
+  animation: MoveUpDown 2s linear infinite;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 87%;
+  }
+  50% {
+    top: 90%;
+  }
+}
+
+ .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+
+.main-text{
+            grid-column-start: 2;
+           
+          }
+
+
+         #ModifyList{
+          text-indent: 0px;
+          font-size: 26px;
+         }
+        #ModModifyList{
+          text-indent: 0px;
+          padding-bottom: 50px;
+          font-size: 26px;
+        }
+          
+          
+          .main-text p{
+            padding-top: 10px;
+            text-indent: 20px;
+            margin-left:auto;
+           margin-right:auto;
+            font-size: 18px;
+      color: rgb(26, 26, 26);
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500; 
+          }
+
+          .main-text h2{
+    
+            text-align: left;
+            padding-left: 30px;
+          }
+          
+        
+
+          h4{
+            padding-top: 20px;
+            font-size: 30px;
+            text-indent: 0px;
+            color:  #ffa200;
+          }
+
+
+
+/*для Мобилок версия*/
+
+@media only screen and (max-width : 600px) { 
+
+.UpperPicture{
+  display: none;
+}
+
+
+.UpperPictureMobile{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
+
+h3{
+  display: none;
+}
+
+.grid {
+
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  h1{
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 6rem;
+    color:  #ffa200;
+    }
+
+
+    #logo-icon{
+      position: absolute;
+      top: 3%;
+      left: 16rem;
+      font-size: 3rem;
+      color: #ffa200;
+      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    #DownIcon{
+      display:none;
+    }
+    #RegisteButton{
+      left: 1rem;
+      top: 390px;
+    }
+    #LoginButton{
+ left: 12.5rem;
+ top: 390px;
+    }
+ 
+    #GearIcon{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffa200;
+      font-size: 60px;
+     top: -345px;
+     left: -110px;
+    }
+    #UserIcon{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffa200;
+      font-size: 60px;
+     top: -620px;
+     left: -110px;
+    }
+    #Consumers{
+      position: relative;
+      left: 90px;
+    }
+
+    #Audience{
+      position: relative;
+      left: 90px;
+    }
+ 
+    #Append{
+      position: relative;
+      left: 90px;
+    }
+    #AllDone{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffa200;
+      font-size: 60px;
+     top: -1120px;
+     left: -110px;
+    }
+
+
+    
+}
