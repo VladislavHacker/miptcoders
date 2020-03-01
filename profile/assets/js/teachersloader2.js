@@ -1,15 +1,15 @@
 var CreatedPool = [];
 
 var DepartmentList = [
-    { id: "1" , name: "Биофизика" }
+    { id: "1" , name: "" }
 ];
 
 var TeacherList = [
     {
-      id: "1" ,
-      name: "В.С. Волков",
-      last_name: "H",
-      patronymic: "L"
+      id: "" ,
+      name: "",
+      last_name: "",
+      patronymic: ""
     }
 
 ];
