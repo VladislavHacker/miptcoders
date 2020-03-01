@@ -4,7 +4,10 @@ html,body
 
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+}
+a{
+  text-decoration: none!important;
 }
 .Together{
   display: block;
@@ -104,7 +107,7 @@ border: 2px solid #ffa200;
 
   }
 
-  
+
   #RegisteButton:hover{
     background-color: whitesmoke;
     border: 2px solid #ffa200;
@@ -119,17 +122,17 @@ border: 2px solid #ffa200;
 }
 
   .LogoMain{
-    display: flex; 
+    display: flex;
     flex-direction: row;
   }
-  
-  
+
+
   .UpperPicture{
     display:block;
 
   }
-  
-  
+
+
   .UpperPictureMobile{
     display: none;
   }
@@ -158,13 +161,13 @@ h3{
     position: relative;
  text-align: center;
  top: 50px;
- 
+
     top: -30%;
     font-size: 4rem;
     color:  #f8f8f8;
     }
-    
-    
+
+
 #DownIcon{
   position:absolute;
   color: white;
@@ -192,7 +195,7 @@ h3{
 
 .main-text{
             grid-column-start: 2;
-           
+
           }
 
 
@@ -205,8 +208,8 @@ h3{
           padding-bottom: 50px;
           font-size: 26px;
         }
-          
-          
+
+
           .main-text p{
             padding-top: 10px;
             text-indent: 20px;
@@ -216,16 +219,16 @@ h3{
       color: rgb(26, 26, 26);
             font-style: normal;
             font-variant: normal;
-            font-weight: 500; 
+            font-weight: 500;
           }
 
           .main-text h2{
-    
+
             text-align: left;
             padding-left: 30px;
           }
-          
-        
+
+
 
           h4{
             padding-top: 20px;
@@ -238,10 +241,10 @@ h3{
 
 /*для Мобилок версия*/
 
-@media only screen and (max-width : 600px) { 
+@media only screen and (max-width : 600px) {
 
 
- 
+
 
 
 
@@ -302,7 +305,7 @@ h3{
  left: 12.5rem;
  top: 390px;
     }
- 
+
 
     #Consumers{
       position: relative;
@@ -313,12 +316,12 @@ h3{
       position: relative;
       left: 40px;
     }
- 
+
     #Append{
       position: relative;
       left: 40px;
     }
-  
+
 
     #AllDone{
       position: relative;
@@ -327,24 +330,24 @@ h3{
         font-size: 40px;
         left: 10px;
 
-      
+
       }
       #UserIcon{
         position: relative;
         top: 20px;
           color: #ffa200;
           font-size: 40px;
-      
+
       }
-      
+
        #GearIcon{
         position: relative;
         top: 20px;
           color: #ffa200;
           font-size: 40px;
-      
-      }
-      
 
-    
+      }
+
+
+
 }
