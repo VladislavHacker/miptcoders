@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+    <link href="./css/footer.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <footer>
+       <a class="VK" href="https://vk.com/vladislavhacker">
+         <i class="fab  fa-vk" id = "Vka"></i>
+         <i class="fab fa-instagram" id="Inst"></i>
+         <i class="fab fa-youtube" id="You"></i>
+         <i class="fab fa-facebook-f" id="F"></i>
+        </a>
+        <div class="tit">
+          Eduq @ 2020
+        </div>
+    </footer>
+  </body>
+</html>
