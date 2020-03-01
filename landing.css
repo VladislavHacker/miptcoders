@@ -8,6 +8,10 @@ html,body
 }
 a{
   text-decoration: none!important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .Together{
   display: block;
